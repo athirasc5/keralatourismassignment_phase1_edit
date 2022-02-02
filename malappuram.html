@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{box-sizing: border-box;}
+        body{font-family:Verdana, Geneva, Tahoma, sans-serif;}
+        .mySlides{display:none;}
+        img{vertical-align: middle;}
+        /*slide shoe container*/
+        .slideshow-container{
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /*caption text*/
+        .text{
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /*number text (1/3 etc)*/
+        .numbertext{
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top:0;
+        }
+        /*The indicators*/
+        .dot{
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display:inline-block;
+            transition: backgroung-color 0.6s ease;
+        }
+        .active{
+            background-color: #717171;
+        }
+        /*fading animation*/
+        .fade{
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration:1.5s;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+            @-webkit-keyframes fade{
+                from{opacity:.4}
+                to{opacity:1}
+
+            }
+            @keyframes fade{
+                from{opacity:.4}to{opacity:1}
+            }
+            /*on smaller screens decrease text size*/
+            @media only screen and (max-width:300px){
+                .text{font-size:11px}
+            }
+    </style>
+</head>
+<body>
+       <h2>Malappuram</h2>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./images/Malap1.jpeg" style="width:100%" class="center">
+          <div class="text">malappuram</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./images/Malap2.jpeg" style="width:50%" class="center">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./images/Malap3.jpeg" style="width:50%" class="center">
+        </div>
+        </div>   
+        <br>
+          <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span>
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+        
+        <p>Year of formation : 1969, June 16
+            Major Rivers : Bharatapuzha, Kadalundipuzha
+            Most populous district
+             District with highest growth rate.
+             District with more rural population
+             District with lowest per capital income.
+             The district with the highest number of Panchayats.
+             Akshaya Project (computer literacy project) was firstly introduced in
+            Malappuram (Pallickal Panchayat)
+             India's only one Govt. Ayurvedic mental Hospital is at Kottakal.
+             First bio resource national park is in Nilambur.
+             Wagon Tragedy memorial Hall is in Tirur.
+             Kudumbasree was inaugurated at 17th May 1998 in Malappuram.
+             Kadalundi Bird Sanctuary is in Malapuram.
+             First Railway line in Kerala - Tirur and Baypore (1861)
+             Mamankam was held at the Thirunavaya Temple, on the banks of river
+            Bharathapuzha.
+             The district with largest number of local self government institutions in
+            Kerala.
+             Thirunavaya on the bank of the river Bharatapuzha where Mamankam was
+            held, Ponnani (port), Nilambur (Teak plantation), Valluvanad (the centre of
+            Malabar rebellion of 1921), Karippur (International Airport), Thenzhipalam
+            (seat of University of Calicut), Thiroor (Birth place of Ezhuthachan) and
+            Kottakkal Aryavaidyasala are in this district (founded by PS Varier, and the
+            only Ayurveda mental hospital in Kerala)
+             The first teak plantation of the world is at Nilambur.
+             The oldest teak in the world is at Kanoli plot in Nilambur.
+             Poonthanam Namboodiri was born in Keezhattoor near
+            Perunthalmanna.
+             Malappuram district has the largest number of computer literates in Kerala.
+             The first fully computer literacy village is Chamravattam, Thrippangode
+            Panchayat, Malappuram district.
+             Ponnani is called the Mecca of Kerala
+            
+            </p>
+        </body>
+        </html> 
+        
+</html>

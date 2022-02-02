@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        *{box-sizing: border-box;}
+        body{font-family:Verdana, Geneva, Tahoma, sans-serif;}
+        .mySlides{display:none;}
+        img{vertical-align: middle;}
+        /*slide shoe container*/
+        .slideshow-container{
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+        }
+        /*caption text*/
+        .text{
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        /*number text (1/3 etc)*/
+        .numbertext{
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top:0;
+        }
+        /*The indicators*/
+        .dot{
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display:inline-block;
+            transition: backgroung-color 0.6s ease;
+        }
+        .active{
+            background-color: #717171;
+        }
+        /*fading animation*/
+        .fade{
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration:1.5s;
+        }
+        .center{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+            @-webkit-keyframes fade{
+                from{opacity:.4}
+                to{opacity:1}
+
+            }
+            @keyframes fade{
+                from{opacity:.4}to{opacity:1}
+            }
+            /*on smaller screens decrease text size*/
+            @media only screen and (max-width:300px){
+                .text{font-size:11px}
+            }
+    </style>
+</head>
+<body>
+       <h2>Idukki</h2>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="./images/Idukki1.jpeg" style="width:100%" class="center">
+          <div class="text">idukki</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="./images/Idukki2.jpeg" style="width:50%" class="center">
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="./images/idukki3.jpeg" style="width:50%" class="center">
+        </div>
+        </div>   
+        <br>
+          <div style="text-align:center">
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+          <span class="dot"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 3000); // Change image every 3 seconds
+        }
+        </script>
+        
+        <p>Year of formation : 1972, January 26
+            Headquarters : Painav
+            Major rivers : Periyar and its tributaries
+            Idukki lost the position of the biggest district when Kuttampuzha village in
+            Idukki district was given to Ernakulam district.
+             District without railway line.
+             The Mullapperiyar dam, a bone of contention between Kerala and Tamil
+            Nadu, is built across Periyar near Kumaly in Idukki district.
+             District with the lowest density of population.
+             District with lowest sex ratio.
+             District with the largest area under forest cover.
+             Known as the treasure house of spices.
+             First spice park in Kerala : Puttadi
+             The first hydro electric project in Kerala - Pallivasal, The highest arch dam
+            in India - Idukki (across river Periyar), Chenkulam dam, Neriyamangalam
+            dam, Idamalayar dam etc. are in Idukki district.
+             The only Sandal wood forest in Kerala is at Marayur in Idukki district.
+            Marayur is a rainshadow region.
+             The highest peak in Kerala, and in South India - Anamudi (2695 m) is in
+            Idukki district, near Munnar.
+             Idukki district has the specialty of having the biggest Assembly
+            constituency in Kerala (Udumpunchola), the biggest Panchayat (Kumaly)
+            and the smallest Panchayat (Vattavada).
+             Idukki district leads in the production of tea and cardamom.
+             The main health resorts of Idukki district are Munnar, Devikulam,
+            Peerumede, Thekkady.
+             Munnar is called 'Kashmir of the South'.
+             Iravikulam National Park, established in 1978 to protect the Nilgiri Tahr,
+            wildlife sanctuaries like Chinnar and Periyar, Powerhouse at Moolamattom,
+            Indo-Swiss Project (for breeding high yield cattle) at Mattupetty and the
+            wind energy production centre at Ramakkalmedu are the other attractions
+            of Idukki district.
+             Idukki district has the largest number of National Parks (4) and wildlife
+            sanctuaries (4) in Kerala.
+             The first National Park in Kerala (Iravikulam) and the first wildlife sanctuary
+            in Kerala (Periyar) are in Idukki district.
+             The biggest wildlife sanctuary in Kerala is Periyar Wildlife Sanctuary.
+            
+            </p>
+        </body>
+        </html> 
+        
+</html>

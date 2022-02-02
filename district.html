@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    *{box-sizing: border-box;}
+    body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+    .mySlides {display: none;}
+    img{vertical-align: middle;}
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+        }
+    /* Caption text */
+        .text{
+            color: #f2f2f2;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom:8px;
+            width:100%;
+            text-align: center;
+        }
+        /* Number text (1/6 etc) */
+        .numbertext{
+            color:#f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top:0;
+        }
+        /* The dots/bullets/indicators */
+        .dot{
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color:#bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: backgrond-color 0.6s ease;
+        }
+        .active{
+            background-color: #717171;
+        }
+        /* Fading animation */
+        .fade{
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+        }
+        .center{
+            display: block;
+            margin-left:auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        table,th,td{
+            border: 1px solid black;
+        }
+        @keyframes fade{
+            from{opacity: .4}to{opacity: 1}
+        }
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width:300px){
+            .text{font-size: 11px;}
+        }
+</style>
+<style>* { 
+    box-sizing: border-box;
+}
+
+ /* Create three equal columns that floats next to each other */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 10px;
+        height: 300px;/*should be removed.only for the demonstraction*/
+    }
+     /* Clear floats after the columns */
+      /*  .row::after{
+            content: "";
+            display:table;
+            clear:both;
+        }*/
+        .row{
+            float:bottom;
+            width: 100%;
+            padding: 60px;
+            height:600px;
+        }
+   
+/* Responsive layout-makes the three columns stack on top of each other instead of next to each other */
+ 
+@media screen and(max-width:600px) {
+    .column{
+        width:100%;
+    }
+    
+}
+</style>
+</head>
+<body>
+
+<h2>Districts</h2>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="./images/kadhakali.jpeg"style="width:50%" class="center" style="height: 50%;">
+  <div class="text">Kathakali</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="./images/vallam.jpeg" style="width:50%" class="center" style="height: 50%;">
+  <div class="text">vallamkali</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="./images/puli.jpeg" style="width:50%" class="center" style="height: 50%;">
+  <div class="text">Pulikali</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="./images/sadhya.jpeg" style="width:50%" class="center" style="height: 50%;">
+  <div class="text">Sadya</div>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+
+<p>Kerala, southwestern coastal state of India. It is a small state, constituting only about 1 percent of the total area of the country. Kerala stretches for about 360 miles (580 km) along the Malabar Coast, varying in width from roughly 20 to 75 miles (30 to 120 km). It is bordered by the states of Karnataka (formerly Mysore) to the north and Tamil Nadu to the east and by the Arabian Sea to the south and west; it also surrounds Mahe, a segment of the state of Puducherry, on the northwestern coast. The capital is Thiruvananthapuram (Trivandrum).Although isolated from the Indian interior by the mountainous belt of the Western Ghats, Kerala has been exposed to many foreign influences via its long coastline; consequently, the state has developed a unique culture within the subcontinent, not only with a diverse religious tradition but also with its own language, Malayalam. Also notable is the high social status that continues to be accorded to women of Kerala, owing to the former strength of a matrilineal kinship system. Area 15,005 square miles (38,863 square km). Pop. (2011) 33,387,677.</p>
+ <div class="row" >
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+      <h2>Thiruvananthapuram</h2>
+      <img src="./images/TVM3.jpg" style="width:100%"  style="height: 50%;"><br>
+        Thiruvananthapuram (or Trivandrum) is the capital of the southern Indian state of Kerala. It's distinguished by its British colonial architecture and many art galleries. It’s also home to Kuthira Malika (or Puthen Malika) Palace, adorned with carved horses and displaying collections related to the Travancore royal family, whose regional capital was here from the 18th–20th centuries. <br>
+        <a href="./trivandrum.html">view more</a>
+        <br>
+          </div>
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+      <h2>Kollam</h2>
+      <img src="./images/Kollam2.jpg" style="width: 100%;" style="height: 50%;"><br>
+          Kollam is a city in the state of Kerala, on India's Malabar Coast. It’s known as a trade hub and for its beaches, like lively Kollam and secluded Thirumullavaram. Sardar Vallabhbhai Patel Police Museum has artifacts tracing the history of the police force. Nearby, Ashtamudi Lake is a gateway to the Kerala backwaters, a network of waterways rich with vegetation.<br>
+          <a href="./kollam.html">view more</a>
+     
+    </div>
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+      <h2>Pathanamthitta</h2>
+      <img src="./images/Path1.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Pathanamthitta is a municipality situated in the Central Travancore region in the state of Kerala, India, spread over an area of 23.50 km². It is the administrative capital of Pathanamthitta district. The town has a population of 37,538<br>
+        <a href="./pathanamthitta.html">view more</a>
+      
+    </div>
+
+  </div> 
+  <div class="row">
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Alappuzha</h2>
+        <img src="./images/Alappy2.jpeg" style="width: 100%;" style="height: 50%;"><br>
+         Alappuzha (or Alleppey) is a city on the Laccadive Sea in the southern Indian state of Kerala. It's best known for houseboat cruises along the rustic Kerala backwaters, a network of tranquil canals and lagoons. Alappuzha Beach is the site of the 19th-century Alappuzha Lighthouse. The city's Mullakkal Temple features a traditional design. <br>
+        <a href="./alappuzha.html">view more</a>
+    </div>
+  <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Ernakulam</h2>
+        <img src="./images/kozhi1.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Sprawling, residential Ernakulam is known for Marine Drive, a busy waterfront promenade where boats offer backwater cruises. The Kerala Folklore and Hill Palace museums explore local heritage through art and antiquities. Shops along Broadway and on MG Road sell fabrics, crafts, and spices, while modern Lulu Mall also has a cinema and an ice rink. Simple eateries serve Keralan specialties and South Indian seafood. <br>
+        <a href="./ernakulam.html">view more</a>
+   </div>
+      <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Thrissur</h2>
+        <img src="./images/Thrissur1.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Thrissur is a city in the south Indian state of Kerala. It's known for sacred sites and colorful festivals. In the center is Vadakkumnathan Temple, dedicated to Lord Shiva and adorned with murals. The ornate, Indo-Gothic Our Lady of Dolours Basilica is nearby. To the north, Thiruvambady Temple is home to several elephants. Sakthan Thampuran Palace houses an archaeology museum with bronze statues and ancient coins.<br>
+          <a href="./thrissur.html">view more</a>
+       </div>
+</div>
+  <div class="row">
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Palakkad</h2>
+        <img src="./images/pala3.jpeg" style="width: 100%;" style="height: 50%"><br>
+        Palakkad, or Palghat, is a city in Kerala, a state in southwestern India. The 18th-century Palakkad Fort has sturdy battlements, a moat and a Hanuman temple on its grounds. North, on the Kalpathy River, the 15th-century Viswanatha Swamy Temple is the main venue of the famous Ratholsavam chariot festival. Northeast, near Malampuzha Dam, the town of Malampuzha has a rock garden created from recycled materials.<br>
+       <a href="./palakkad.html">view more</a>
+        
+      </div>
+
+      <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Kozhikode</h2>
+        <img src="./images/kozhi3.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Kozhikode is a coastal city in the south Indian state of Kerala. It was a significant spice trade center and is close to Kappad Beach, where Portuguese explorer Vasco da Gama landed in 1498. The central Kozhikode Beach, overlooked by an old lighthouse, is a popular spot for watching the sunset. <br>
+            <a href="./kozhikode.html">view more</a>
+      
+      </div>
+      <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Kannur</h2>
+        <img src="./images/kannu2.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Kannur is a coastal city in the south Indian state of Kerala. It was once an ancient trading port. Enduring monuments such as 16th-century St. Angelo Fort, once occupied by European colonial forces, show the city’s significant role in the spice trade. Housed in a former palace, the Arakkal Museum highlights Kerala's one Muslim royal family. The palm-fringed sands of Payyambalam Beach run along Kannur’s western shore.<br>
+          <a href="./Kannur.html">view more</a>
+        
+      </div>
+
+  </div>
+  <div class="row">
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Kasargod</h2>
+        <img src="./images/Kasargod2.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Kasaragod, formerly Kassergode in English, is a municipal town and administrative headquarters of Kasaragod district in the state of Kerala, India. Established in the year 1966, Kasaragod was the first municipal town in the district.<br>
+       <a href="./kasargod.html">view more</a>
+        
+      </div>
+
+      <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Wayanad</h2>
+        <img src="./images/waya2.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Wayanad is a rural district in Kerala state, southwest India. In the east, the Wayanad Wildlife Sanctuary is a lush, forested region with areas of high altitude, home to animals including Asiatic elephants, tigers, leopards and egrets. In the Ambukuthi Hills to the south, Edakkal Caves contain ancient petroglyphs, some dating back to the Neolithic age.<br>
+            <a href="./wayanad.html">view more</a>
+       
+      </div>
+      <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Malappuram</h2>
+        <img src="./images/Malap2.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Malappuram is a city in the Indian state of Kerala, spread over an area of 58.20 km². The first municipality in the district formed in 1970, Malappuram serves as the administrative headquarters of Malappuram district. Divided into 40 electoral wards, the city has a population density of 1,742 per square kilometre<br>
+          <a href="./malappuram.html">view more</a>
+        
+      </div>
+
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:rgb(255, 255, 255);">
+        <h2>Idukki</h2>
+        <img src="./images/Idukki1.jpeg" style="width: 100%;" style="height: 50%;"><br>
+        Idukki district is a densely forested, mountainous region in the south Indian state of Kerala. In the north, Anamudi mountain towers over Eravikulam National Park, where the rare, blue Neelakurinji flower blooms every 12 years. Nearby, Munnar is a hill station known for its sprawling tea plantations and Tea Museum. Farther south is the vast, curved Idukki Dam and Periyar National Park, a tiger and elephant reserve<br>
+       <a href="./Idukki.html">view more</a>
+        
+      </div>
+<div class="row">
+        <div class="column" style="background-color:rgb(255, 255, 255);">
+            <h2>Kottayam</h2>
+            <img src="./images/Kottayam3.jpeg" style="width: 100%;" style="height: 50%;"><br>
+            Kottayam is a city in the Indian state of Kerala. ... Kottayam is also called as “Akshara Nagari” which means the “city of letters” considering its contribution to print media and literature. Kottayam Town is the first town in India to have achieved 100% literacy (a remarkable feat achieved as early as in 1989).<br>
+           <a href="./kottayam.html">view more</a>
+            
+          </div>
+    </body>
+</html> 
+
